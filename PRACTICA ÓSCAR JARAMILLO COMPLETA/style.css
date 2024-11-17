@@ -1,0 +1,191 @@
+/* Reseteo básico: elimina márgenes y rellenos predeterminados de todos los elementos */
+* {
+    margin: 0; /* Elimina los márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box; /* Hace que el ancho y el alto de los elementos incluyan bordes y rellenos */
+}
+
+/* Cabecera fija en la parte superior de la página */
+.header {
+    position: fixed; /* Hace que la cabecera quede fija en la parte superior, incluso cuando se haga scroll */
+    top: 0; /* Coloca la cabecera en la parte superior */
+    width: 100%; /* La cabecera ocupa todo el ancho de la pantalla */
+    background-color: #4a4a4a; 
+    color: #fff; 
+    display: flex; /* Utiliza el modelo de diseño flexible (Flexbox) para organizar los elementos */
+    align-items: center; 
+    padding: 10px 20px; /* Agrega relleno dentro de la cabecera */
+    z-index: 1000; /* Asegura que la cabecera se coloque por encima de otros elementos de la página */
+}
+
+/* Contenedor de los elementos dentro de la cabecera */
+.header-content {
+    display: flex; /* Organiza los elementos en una fila */
+    align-items: center; 
+    width: 100%; 
+    justify-content: space-between; /* Distribuye los elementos a ambos extremos */
+}
+
+/* Logo y nombre de la marca */
+.logo {
+    display: flex; /* Utiliza Flexbox para organizar los elementos */
+    align-items: center; /* Centra el logo y el texto verticalmente */
+    width: 100px; /* Establece un ancho fijo para la sección del logo */
+}
+
+.logo img {
+    width: 150px; 
+    margin-right: 10px; 
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+/* Nombre de la marca con estilo */
+.brand {
+    color: #ff6600; 
+    font-weight: bold;  
+    font-size: 1.2rem;  
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex; /* Utiliza Flexbox para organizar los elementos dentro de la barra de búsqueda */
+    justify-content: center; /* Centra los elementos dentro de la barra */
+}
+
+/* Estilo del campo de entrada de la barra de búsqueda */
+.search-bar input {
+    width: 200px;  
+    padding: 5px;  
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 5px; /* Redondea las esquinas del campo de entrada */
+}
+
+/* Estilo del botón de búsqueda */
+.search-button {
+    background-color: #ff6600;  
+    border: none; /* Elimina el borde por defecto */
+    padding: 5px 10px;  
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    color: white;  
+}
+
+/* Enlaces del menú de navegación */
+.nav-menu a {
+    color: #fff;  
+    margin: 0 10px;  
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 0.9rem;  
+}
+
+/* Sección de iconos en el menú */
+.icon-menu {
+    display: flex; /* Utiliza Flexbox para organizar los iconos en fila */
+    gap: 10px; /* Añade espacio entre los iconos */
+}
+
+/* Estilo de los iconos */
+.icon {
+    font-size: 2em; /* Aumenta el tamaño de los iconos */
+}
+
+/* Sección Hero con imagen de fondo */
+.hero {
+    background-image: url('caja.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo sin deformarse */
+    background-position: center; /* Centra la imagen en el fondo */
+    color: white;  
+    text-align: center;  
+    padding: 250px 20px;  
+    margin-top: 100px;  
+}
+
+/* Estilo del título en la sección Hero */
+.hero h1 {
+    font-size: 3rem;  
+    margin-bottom: 10px;  
+    text-align: left;  
+    margin-top: -100px; /* Mueve el título hacia arriba para alinearlo mejor */
+}
+
+/* Estilo del párrafo en la sección Hero */
+.hero p {
+    font-size: 1.5rem; /* Aumenta el tamaño del párrafo */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para los iconos en la sección principal */
+.icon-section {
+    display: flex; /* Utiliza Flexbox para organizar los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px;  
+    padding: 20px;  
+}
+
+/* Estilo de las cajas que contienen los iconos */
+.icon-box {
+    width: 80px;  
+    height: 80px;  
+    background-color: #ccc;  
+    border: 3px solid #ff6600;  
+    display: flex; /* Utiliza Flexbox para centrar el icono dentro de la caja */
+    justify-content: center; /* Centra horizontalmente el icono */
+    align-items: center; /* Centra verticalmente el icono */
+    border-radius: 10px; /* Redondea las esquinas de las cajas */
+}
+
+/* Estilo de las imágenes dentro de las cajas de iconos */
+.icon-box img {
+    width: 60%; /* Define que las imágenes ocupen el 60% del tamaño de la caja */
+}
+
+/* Estilo general para el pie de página */
+.footer {
+    background-color: #444;  
+    color: white;  
+    display: flex; /* Utiliza Flexbox para organizar los elementos */
+    justify-content: space-around; /* Distribuye las secciones horizontalmente */
+    align-items: center;  
+    padding: 20px;  
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas si la pantalla es pequeña */
+}
+
+/* Estilo del logo dentro de la sección del pie de página */
+.logo-footer {
+    display: flex; /* Utiliza Flexbox para organizar el logo y el texto */
+    flex-direction: column; /* Organiza los elementos (imagen y texto) en columna */
+    align-items: center;  
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo de la imagen del logo en el pie de página */
+.logo-footer img {
+    max-width: 50px; /* Ajusta el tamaño máximo de la imagen del logo */
+    margin-bottom: 5px; /* Añade espacio debajo del logo */
+}
+
+/* Estilo para las secciones dentro del pie de página */
+.footer-section {
+    text-align: center; /* Centra el texto dentro de las secciones */
+    margin: 10px; /* Añade un pequeño margen alrededor de cada sección */
+}
+
+/* Estilo para los títulos dentro de las secciones del pie de página */
+.footer-section p {
+    font-weight: bold; /* Hace que el texto sea en negrita */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+}
+
+/* Estilo para los enlaces en el pie de página */
+.footer-section a {
+    color: #ff6600; /* Establece el color de los enlaces como naranja */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+}
+
+/* Estilo cuando el usuario pasa el mouse sobre un enlace en el pie de página */
+.footer-section a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse sobre el enlace */
+}

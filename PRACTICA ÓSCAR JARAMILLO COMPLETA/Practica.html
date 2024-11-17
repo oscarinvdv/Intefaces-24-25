@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Declaración del conjunto de caracteres que se usará en la página -->
+    <meta charset="UTF-8">
+
+    <!-- Asegura que la página se vea correctamente en dispositivos móviles, adaptando su tamaño -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <title>Rush Box</title>
+
+    <!-- Enlaza el archivo de estilos CSS externo para darle formato a la página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabecera de la página que incluye logo, barra de búsqueda y menú -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Contenedor del logo y nombre de la marca -->
+            <div class="logo">
+                <!-- Imagen del logo que aparece en la parte superior izquierda -->
+                <img src="logo.png" alt="Logo de Rush Box"> 
+                <!-- Nombre de la marca -->
+                <span class="brand">RUSH BOX</span>
+            </div>
+
+            <!-- Barra de búsqueda para que el usuario pueda buscar productos -->
+            <div class="search-bar">
+                <!-- Campo de texto para escribir la búsqueda -->
+                <input type="text" placeholder="Empieza a buscar...">
+                <!-- Botón de búsqueda con un ícono de lupa -->
+                <button class="search-button">🔍</button>
+            </div>
+
+            <!-- Menú de navegación con enlaces a las secciones principales -->
+            <nav class="nav-menu">
+                <a href="#">Productos</a>
+                <a href="#">Categorías</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Novedades</a>
+                <a href="#">Suscripciones</a>
+            </nav>
+
+            <!-- Menú de iconos para acceder a la caja, carrito y perfil de usuario -->
+            <div class="icon-menu">
+                <!-- Iconos representando acciones específicas -->
+                <span class="icon">📦</span> <!-- Icono de caja -->
+                <span class="icon">🛒</span> <!-- Icono de carrito -->
+                <span class="icon">👤</span> <!-- Icono de usuario -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida con una imagen de fondo -->
+    <section class="hero">
+        <!-- Título principal de la página -->
+        <h1>Donde quieras, cuando quieras.</h1>
+        <!-- Subtítulo con una frase adicional -->
+        <p>Sea lo que sea que busques, en Rush Box lo tenemos.</p>
+    </section>
+
+    <!-- Sección de iconos representando diferentes categorías -->
+    <section class="icon-section">
+        <!-- Caja de icono de encendido -->
+        <div class="icon-box"><img src="boton.png" alt="Icono de encendido"></div>
+        <!-- Caja de icono de precio -->
+        <div class="icon-box"><img src="precio.png" alt="Icono de etiqueta"></div>
+        <!-- Caja de icono de casa -->
+        <div class="icon-box"><img src="casa.png" alt="Icono de casa"></div>
+        <!-- Caja de icono de pesa -->
+        <div class="icon-box"><img src="pesa.png" alt="Icono de pesa"></div>
+    </section>
+
+    <!-- Pie de página con secciones de información adicional -->
+    <footer class="footer">
+        <!-- Sección con enlaces a las redes sociales -->
+        <div class="footer-section redes">
+            <p>Nuestras redes</p>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="x.png" alt="Twitter"></a>
+        </div>
+
+        <!-- Sección con enlaces a términos legales -->
+        <div class="footer-section legales">
+            <p>Términos legales</p>
+            <a href="#">Protección del consumidor</a>
+            <a href="#">Bases legales</a>
+        </div>
+
+        <!-- Sección con el logo y el copyright -->
+        <div class="footer-section logo-footer">
+            <img src="logo.png" alt="Rush Box Logo">
+            <p>Rush Box 2023</p>
+        </div>
+
+        <!-- Sección con enlaces a diferentes idiomas -->
+        <div class="footer-section idiomas">
+            <p>Otros idiomas</p>
+            <a href="#">English</a>, <a href="#">Deutsch</a>, <a href="#">Русский</a>, 
+            <a href="#">Italiano</a>, <a href="#">Nederlands</a>, <a href="#">Français</a>
+        </div>
+
+        <!-- Sección con enlaces de asistencia al cliente -->
+        <div class="footer-section asistencia">
+            <p>Asistencia</p>
+            <a href="#">Atención al cliente</a>, <a href="#">Soporte</a>, <a href="#">Ayuda</a>
+        </div>
+    </footer>
+</body>
+</html>
